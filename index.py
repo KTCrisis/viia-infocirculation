@@ -25,9 +25,9 @@ def get_day():
 
 #Return client for Azure DatalakeService    
 def get_client():
-    service_client = DataLakeServiceClient(account_url="https://dls0mvp0viiabi0dev0we.dfs.core.windows.net",
-    credential= "Sphwq/Zk+ykpIh8pQfI9BeClxVvfoNgoqGJ+BwlIe8IiePyUdVLrFR4+bYz5TDuUE6rORZAnW5tuxUkAWvsWrQ==")
-    file_system_client = service_client.get_file_system_client(file_system="viia")
+    service_client = DataLakeServiceClient(account_url="https://xxxxxx.dfs.core.windows.net",
+    credential= "*******")
+    file_system_client = service_client.get_file_system_client(file_system="xxxx")
     directory_client = file_system_client.get_directory_client("users/mve/")
     return directory_client
 
